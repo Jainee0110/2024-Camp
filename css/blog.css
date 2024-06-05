@@ -1,0 +1,136 @@
+.article {
+    display: flex;
+    justify-content: center;
+    gap: 6.98%;
+    padding-bottom: 80px;
+}
+
+.blog-content {
+    margin-top: 120px;
+    color: #3B3B3B;
+    width: 44.375%;
+}
+
+.blog-content span {
+    color: #919191;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    text-align: center;
+
+}
+
+.subtitle {
+
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.fs-20 {
+    font-size: 20px;
+    padding-bottom: 40px;
+    text-align: justify;
+}
+
+.fs-24 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2x;
+    margin-bottom: 16px;
+}
+
+.blog-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.blog-content li {
+    width: 48.6%;
+    margin-bottom: 24px;
+    
+}
+
+.blog-content ul p {
+    margin-top: 8px;
+
+}
+
+
+
+.side-bar {
+    width: 16%;
+    background: #FAFAFA;
+    border-radius: 8px 0px 0px 0px;
+    padding-top: 80px;
+    margin-top: 120px;
+
+}
+
+.side-bar a {
+    font-size: 20px;
+    color: #5B5B5B;
+    display: inline-block;
+    margin-bottom: 32px;
+    margin-left: 80px;
+    height: 34px;
+}
+.side-bar a:hover {
+    border-bottom: 2px solid #1E1E1E;
+    color: #1E1E1E;
+}
+.relative-article{
+    width: 67.5%;
+padding: 80px 0px 0px 0px;
+border-top: 1px solid #C1C1C1;
+margin: 0 auto;
+margin-bottom: 120px;
+}
+.relative-article .fs-28{
+ color:#3B3B3B;
+ margin-bottom: 40px;
+}
+
+
+.relative-article ul{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.relative-article img{
+    border-radius: 8px;
+    border: 1px solid #F1F1F1;
+    margin-bottom: 16px;
+}
+.relative-article ul li{
+    width: 416px;
+}
+.relative-article a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3B3B3B;  
+}
+.article-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.article-detail .tag{
+    background: #F1F1F1;
+padding: 4px 12px;
+border-radius: 16px;
+color: #3B3B3B;
+
+}
+.article-detail span{
+    color: #5B5B5B;
+}

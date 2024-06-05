@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+item,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+item,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+body {
+    font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /*outline: 2px solid red;*/
+}
+body{
+    padding-top: 60px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+    border-bottom: 1px solid #F1F1F1;
+}
+.header-inner {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    justify-content: flex-start;
+
+}
+.header-icon{
+    display: inline-block;
+    margin-left: 16.25%;
+    margin-right: 16.5625%;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-item {
+    display: block;
+    padding: 4px 8px 4px 8px;
+    color: #000;
+}
+
+.menu-item:hover {
+    background: linear-gradient(to left, #a5aab0, #a5aab0) left top no-repeat,
+        linear-gradient(to bottom, #a5aab0, #a5aab0) left top no-repeat,
+        linear-gradient(to left, #a5aab0, #a5aab0) right top no-repeat,
+        linear-gradient(to bottom, #a5aab0, #a5aab0) right top no-repeat,
+        linear-gradient(to left, #a5aab0, #a5aab0) left bottom no-repeat,
+        linear-gradient(to bottom, #a5aab0, #a5aab0) left bottom no-repeat,
+        linear-gradient(to left, #a5aab0, #a5aab0) right bottom no-repeat,
+        linear-gradient(to left, #a5aab0, #a5aab0) right bottom no-repeat;
+    background-size: 1px 8px, 8px 1px, 1px 8px, 8px 1px;
+    font-weight: bold;
+}
+
+.footer {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+    padding: 80px 312px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3B3B3B;
+    font-size: 20px;
+}
+
+.note p {
+    margin: 24px 0px;
+}
+
+.e-mail {
+    color: #919191;
+    line-height: 1.2;
+}
+
+.link-content a {
+    display: block;
+    width: 306px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #C1C1C1;
+    color: #3B3B3B;
+    padding: 8px 24px;
+}
+
+.link-content span {
+    margin-left: 8px;
+}
+
+.sheet a {
+    background: #000;
+    color: #FFFFFF;
+}
+
+.link-content a:hover {
+    font-weight: 600;
+}
+
+.instagram {
+    margin: 24px 0px;
+}
+.fs-28{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+}

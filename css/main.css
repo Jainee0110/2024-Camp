@@ -1,0 +1,352 @@
+*,
+*::before,
+*::after {
+    /*outline: 2px solid red;*/
+}
+
+.nav {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-left: 312px;
+    justify-content: space-between;
+
+}
+
+.introduce {
+    margin-right: 24px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #3B3B3B;
+    margin-bottom: 24px;
+}
+
+.detail {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #5B5B5B;
+    position: relative;
+}
+
+.skill {
+    color: #C1C1C1;
+    padding-top: 8px;
+}
+
+.introduce-link {
+    margin-top: 60px;
+}
+
+.introduce-link a {
+    margin-right: 16px;
+}
+
+.mark-UI {
+    position: absolute;
+    z-index: -1;
+    left: 149px;
+    top: 21px;
+}
+
+.mark-frotend {
+    position: absolute;
+    z-index: -1;
+    left: 310px;
+    top: 21px;
+    width: 119px;
+    height: 8px;
+}
+
+.fs-32{
+    width: 372px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 32px;
+    color:#3B3B3B;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    position: relative;
+}
+.fs-32::before{
+    content: "";
+    position: absolute;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-lg.png?raw=true');
+    top: 136.5px;
+    left: 0px;
+    width: 100px;
+    height: 6px;
+}
+
+.fs-32::after{
+    content: "";
+    position: absolute;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-lg.png?raw=true');
+    right: 0px;
+    top:136.5px;
+    width: 100px;
+    height: 6px;
+}
+
+.box {
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.box-detail {
+    backdrop-filter: blur(4px);
+    width: 526px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 80px 40px 56px 40px;
+    border-radius: 24px;
+    color: #FFFFFF;
+}
+
+.box-detail p {
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.box-detail .tag {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.box-detail .tag li {
+    border-radius: 16px;
+    padding: 4px 12px;
+    background: #FFFFFF;
+    color: #3B3B3B;
+
+}
+
+.box-detail a {
+    display: block;
+    border-radius: 5px;
+    background: #000;
+    padding: 16px 32px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 176px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 20;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+
+
+}
+
+.travel .box-detail, .beauty .box-detail {
+    margin-left: 40px;
+}
+
+.travel{
+    position: relative;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true');
+}
+
+.travel::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(1px);
+    background-repeat: no-repeat;
+    background: rgba(39, 39, 39, 0.4);
+
+}
+
+.travel .box-content, .beauty .box-content {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 312px;
+    display: flex;
+    align-items: center;
+}
+
+
+.finance {
+    position: relative;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true');
+}
+.finance::before{
+    position: absolute;
+    background: rgba(10, 16, 19, 0.5);
+    max-width: 948px;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.finance .box-detail{
+    position: relative;
+    top: 200px;
+    left: 312px;
+}
+.beauty{
+    position: relative;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true');
+}
+
+.beauty::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(1px);
+    background-repeat: no-repeat;
+    background: rgba(13, 12, 7, 0.5);
+
+}
+.beauty .box-content {
+    top: 176px;
+}
+
+.service-introduce{
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true');
+    height: 880px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+.service-introduce ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.service-item{
+    width: 306px;
+    height: 306px;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true');
+    padding: 20px 30px;
+    border-radius: 16px;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+.service-item p{
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+.service-introduce .text{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #3B3B3B;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.service-introduce a{
+    display: block;
+    background: #000;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 276px;
+    padding-left: 32px;
+    position: relative;
+
+}
+.service-introduce .material-symbols-outlined {
+    position: absolute;
+    top: 20px;
+    left: 220px;
+
+
+}
+.service-introduce a:hover{
+    color: #000;
+    background: #f7f7f7;
+}
+.article-introduce{
+    padding-bottom: 120px;
+}
+.article-text{
+    padding: 0px 8px;
+}
+.article-introduce ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.article-introduce img{
+    border-radius: 8px;
+    border: 1px solid #F1F1F1;
+    margin-bottom: 16px;
+}
+.article-introduce ul li{
+    width: 416px;
+}
+.article-introduce a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3B3B3B;  
+}
+.article-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.article-detail .tag{
+    background: #F1F1F1;
+padding: 4px 12px;
+border-radius: 16px;
+color: #3B3B3B;
+
+}
+.article-detail span{
+    color: #5B5B5B;
+}
+.page{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.ellipse{
+    content: "";
+    background-color: #E9E9E9;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
