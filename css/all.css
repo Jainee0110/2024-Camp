@@ -158,28 +158,35 @@ a {
     box-sizing: border-box;
     /*outline: 2px solid red;*/
 }
-body{
+
+body {
     padding-top: 60px;
 }
-.header{
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
     position: fixed;
     top: 0;
+    z-index: 100;
     width: 100%;
     background: #FFFFFF;
     border-bottom: 1px solid #F1F1F1;
 }
+
 .header-inner {
-    max-width: 1920px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    
     justify-content: flex-start;
 
 }
-.header-icon{
+
+.header-icon {
     display: inline-block;
     margin-left: 16.25%;
     margin-right: 16.5625%;
@@ -191,7 +198,7 @@ body{
 }
 
 .menu-item {
-    display: block;
+    display: inline-block;
     padding: 4px 8px 4px 8px;
     color: #000;
 }
@@ -211,12 +218,18 @@ body{
 
 .footer {
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
-    padding: 80px 312px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #3B3B3B;
+    font-size: 20px;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 1296px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #3B3B3B;
-    font-size: 20px;
 }
 
 .note p {
@@ -254,8 +267,154 @@ body{
 .instagram {
     margin: 24px 0px;
 }
-.fs-28{
+
+.fs-28 {
     font-weight: 700;
     font-size: 28px;
     line-height: 1.2;
+}
+
+.display-in-mobile {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+.menu-control {
+    display: none;
+}
+
+@media(max-width:1760px) {
+    .footer-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width:1296px) {
+    body {
+        padding-top: 100px;
+    }
+}
+
+@media(max-width: 992px) {
+    .display-in-desktop {
+        display: none;
+    }
+
+    .display-in-mobile {
+        display: block;
+    }
+
+    .header-icon {
+        margin-left: 0;
+    }
+
+    .header-inner {
+        justify-content: center;
+    }
+
+    .note p {
+        font-size: 16px;
+    }
+
+    .link-content a {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+}
+
+@media(max-width:768px) {
+    .header {
+        height: 56px;
+    }
+
+    .header .menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        background-color: #FFFFFF;
+        margin-top: 5px;
+
+    }
+
+    .header-icon {
+        margin-top: 11.5px;
+    }
+
+    .header-inner .material-symbols-outlined {
+        left: 85%;
+
+    }
+
+    label {
+        display: block;
+    }
+
+    .header-inner {
+        padding-top: 11.5px;
+        padding-bottom: 11.5px;
+        display: unset;
+    }
+
+    .header-inner .material-symbols-outlined {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 93%;
+
+    }
+
+
+
+    #menu-control:checked+.menu-btn .open {
+        display: none;
+    }
+
+    #menu-control:not(:checked)+.menu-btn .open {
+        display: inline;
+    }
+
+    #menu-control:checked+.menu-btn .close {
+        display: inline;
+    }
+
+    #menu-control:not(:checked)+.menu-btn .close {
+        display: none;
+    }
+
+    #menu-control:not(:checked)~.menu {
+        display: none;
+    }
+
+    #menu-control:checked~.menu {
+        display: flex;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+    }
+
+    .note {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .footer {
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media(max-width:375px) {
+    .header-inner .material-symbols-outlined {
+        left: 90%;
+
+    }
 }

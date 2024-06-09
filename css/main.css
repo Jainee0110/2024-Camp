@@ -5,18 +5,18 @@
 }
 
 .nav {
-    max-width: 1920px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    padding-left: 312px;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-top: 48px;
 
 }
 
 .introduce {
-    margin-right: 24px;
+    margin-right: 1.25%;
+
 }
+
 
 .name {
     font-weight: 600;
@@ -31,6 +31,7 @@
     margin-bottom: 8px;
     color: #5B5B5B;
     position: relative;
+    width: 430px;
 }
 
 .skill {
@@ -44,6 +45,10 @@
 
 .introduce-link a {
     margin-right: 16px;
+}
+
+.nav-image {
+    width: 60%;
 }
 
 .mark-UI {
@@ -62,19 +67,20 @@
     height: 8px;
 }
 
-.fs-32{
+.fs-32 {
     width: 372px;
     margin: 0 auto;
     font-weight: 600;
     font-size: 32px;
-    color:#3B3B3B;
+    color: #3B3B3B;
     line-height: 1.2;
     text-align: center;
     padding-top: 120px;
     padding-bottom: 80px;
     position: relative;
 }
-.fs-32::before{
+
+.fs-32::before {
     content: "";
     position: absolute;
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-lg.png?raw=true');
@@ -84,21 +90,18 @@
     height: 6px;
 }
 
-.fs-32::after{
+.fs-32::after {
     content: "";
     position: absolute;
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-lg.png?raw=true');
     right: 0px;
-    top:136.5px;
+    top: 136.5px;
     width: 100px;
     height: 6px;
 }
 
 .box {
-    margin: 0 auto;
-    max-width: 1920px;
     height: 800px;
-    background-repeat: no-repeat;
 }
 
 
@@ -147,6 +150,11 @@
     position: relative;
 }
 
+.box-detail a:hover {
+    background: #FFFFFF;
+    color: #000;
+}
+
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -160,11 +168,13 @@
 
 }
 
-.travel .box-detail, .beauty .box-detail {
+.travel .box-detail,
+.beauty .box-detail {
     margin-left: 40px;
 }
 
-.travel{
+.travel {
+    margin: 0 auto;
     position: relative;
     background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true');
 }
@@ -182,36 +192,48 @@
 
 }
 
-.travel .box-content, .beauty .box-content {
+.travel .box-content,
+.beauty .box-content {
     position: absolute;
     z-index: 1;
-    top: 80px;
-    left: 312px;
+    top: 10%;
+    right: 0;
+    left: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
 
 
 .finance {
     position: relative;
     background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true');
 }
-.finance::before{
+
+.finance::before {
     position: absolute;
     background: rgba(10, 16, 19, 0.5);
-    max-width: 948px;
+    width: 49.375%;
     content: "";
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
-.finance .box-detail{
+
+.finance .box-content {
+    width: 49.375%;
+}
+
+.finance .box-detail {
     position: relative;
     top: 200px;
-    left: 312px;
+    left: 33%;
+
 }
-.beauty{
+
+.beauty {
     position: relative;
     background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true');
 }
@@ -228,40 +250,52 @@
     background: rgba(13, 12, 7, 0.5);
 
 }
+
 .beauty .box-content {
     top: 176px;
 }
 
-.service-introduce{
+.service-introduce {
     background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true');
-    height: 880px;
+    height: 881px;
+    background-position: center center;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    max-width: 1920px;
+    -webkit-background-size: cover;
 }
-.service-introduce ul{
+
+
+
+.service-introduce ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
 }
-.service-item{
+
+.service-item {
     width: 306px;
-    height: 306px;
     background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true');
-    padding: 20px 30px;
     border-radius: 16px;
     text-align: center;
-    padding-top: 80px;
-    
+    aspect-ratio: 1/1;
+    position: relative;
 }
-.service-item p{
+
+.service-item-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.service-item p {
     font-weight: 700;
     font-size: 28px;
     color: #FFFFFF;
     margin-top: 24px;
 }
-.service-introduce .text{
+
+.service-introduce .text {
     font-weight: 600;
     font-size: 28px;
     line-height: 1.2;
@@ -270,7 +304,8 @@
     margin-top: 80px;
     margin-bottom: 40px;
 }
-.service-introduce a{
+
+.more-information {
     display: block;
     background: #000;
     padding-top: 16px;
@@ -285,64 +320,77 @@
     position: relative;
 
 }
-.service-introduce .material-symbols-outlined {
+
+.more-information .material-symbols-outlined {
     position: absolute;
     top: 20px;
     left: 220px;
 
 
 }
-.service-introduce a:hover{
+
+.more-information:hover {
     color: #000;
     background: #f7f7f7;
 }
-.article-introduce{
-    padding-bottom: 120px;
+
+.article-introduce {
+    padding-bottom: 40px;
 }
-.article-text{
+
+.article-text {
     padding: 0px 8px;
 }
-.article-introduce ul{
+
+.article-introduce ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
 }
-.article-introduce img{
+
+.article-introduce img {
     border-radius: 8px;
     border: 1px solid #F1F1F1;
     margin-bottom: 16px;
 }
-.article-introduce ul li{
+
+.article-introduce ul li {
     width: 416px;
 }
-.article-introduce a{
+
+.article-introduce a {
     font-size: 20px;
     font-weight: 700;
-    color: #3B3B3B;  
+    color: #3B3B3B;
 }
-.article-detail{
+
+.article-detail {
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
 }
-.article-detail .tag{
+
+.article-detail .tag {
     background: #F1F1F1;
-padding: 4px 12px;
-border-radius: 16px;
-color: #3B3B3B;
+    padding: 4px 12px;
+    border-radius: 16px;
+    color: #3B3B3B;
 
 }
-.article-detail span{
+
+.article-detail span {
     color: #5B5B5B;
 }
-.page{
+
+.page {
     display: flex;
     gap: 16px;
     justify-content: center;
-    margin-top: 40px;
+    margin-bottom: 120px;
 }
-.ellipse{
+
+.ellipse {
     content: "";
     background-color: #E9E9E9;
     height: 12px;
@@ -350,3 +398,424 @@ color: #3B3B3B;
     border-radius: 50%;
 }
 
+@media(max-width:1760px) {
+    .finance .box-detail {
+        left: 12%;
+    }
+
+    .article-introduce,
+    .service-introduce {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width:1296px) {
+    .introduce-link {
+        margin-top: 30px;
+    }
+
+    .name {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .nav {
+        margin-top: 0;
+    }
+
+    .nav-image {
+        width: 50%;
+    }
+
+    .box-content img {
+        width: 500px;
+    }
+
+    .service-introduce ul,
+    .article-introduce ul {
+        gap: 10px;
+
+    }
+
+    .box,
+    .finance .box-content {
+        height: 560px;
+
+    }
+
+    .travel,
+    .beauty,
+    .finance {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .travel .box-content,
+    .beauty .box-content {
+        right: 1.5%;
+        left: 1.5%;
+    }
+
+    .travel .box-detail,
+    .beauty .box-detail {
+        margin-left: 2%;
+    }
+
+    .finance::before {
+        width: 55%;
+    }
+
+    .beauty .box-content,
+    .finance .box-detail {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .finance .box-detail {
+        width: 92.1%;
+        left: 4%;
+    }
+
+}
+
+
+@media(max-width: 992px) {
+    .nav {
+        flex-direction: column-reverse;
+    }
+
+    .nav-image {
+        width: 100%;
+    }
+
+    .nav-image .display-in-mobile,
+    .detail .display-in-mobile,
+    .skill .display-in-mobile {
+        display: none;
+    }
+
+    .nav-image .display-in-desktop,
+    .detail .display-in-desktop,
+    .skill .display-in-desktop {
+        display: block;
+    }
+
+    .introduce {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .nav-image .display-in-mobile {
+        margin: 0 auto;
+    }
+
+    .box-detail,
+    .finance .box-detail {
+        width: 375px;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .box-detail p {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .box-detail a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        font-size: 16px;
+        width: 128px;
+        margin-top: 20px;
+    }
+
+    .box-detail .tag {
+        gap: 8px;
+    }
+
+    .box,
+    .box-content,
+    .finance .box-content {
+        height: 390px;
+
+    }
+
+    .material-symbols-outlined {
+        top: 10px;
+        left: 90px;
+    }
+
+    .box-detail .tag {
+        margin-bottom: 0;
+    }
+
+    .box-detail .tag {
+        justify-content: center;
+    }
+
+    .more-information {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 16px;
+        font-weight: 700;
+        width: 208px;
+        padding-left: 16px;
+    }
+
+    .more-information .material-symbols-outlined {
+        top: 10px;
+        left: 170px;
+    }
+
+    .fs-32 {
+        font-size: 24px;
+        width: 249px;
+        font-weight: 700;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .fs-32::before {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-sm.png?raw=true');
+        top: 92px;
+        left: 0px;
+        width: 56px;
+    }
+
+    .fs-32::after {
+        content: "";
+        position: absolute;
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-sm.png?raw=true');
+        right: 0px;
+        top: 92px;
+        width: 56px;
+    }
+
+    .article-introduce ul {
+        flex-direction: column;
+        gap: 48px;
+
+
+
+    }
+
+    .article-introduce {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
+    .article-introduce ul li {
+        max-width: 351px;
+    }
+
+
+    .article-introduce a {
+        font-weight: 600;
+    }
+
+
+    .display-in-mobile .more-information {
+        margin-bottom: 80px;
+        width: 128px;
+    }
+
+    .display-in-mobile .more-information .material-symbols-outlined {
+        left: 90px;
+        top: 9px;
+    }
+
+    .page {
+        display: none;
+    }
+
+    .service-introduce {
+        background: none;
+        background-color: #FAFAFA;
+        height: 1653px;
+        padding-bottom: 80px;
+
+    }
+
+    .service-introduce ul {
+        flex-direction: column;
+    }
+
+    .service-item p {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .service-introduce ul {
+        gap: 24px;
+    }
+
+    .service-introduce .text {
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+
+    .service-introduce {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .box-detail .fs-28 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .box-content img {
+        width: 295px;
+    }
+
+    .travel .box-content {
+        top: 0;
+    }
+
+    .travel img {
+        align-self: flex-end;
+    }
+
+    .introduce {
+        text-align: center;
+    }
+
+
+}
+
+@media(max-width:768px) {
+    .nav {
+        margin-top: -43px;
+    }
+
+    .travel .box-content,
+    .beauty .box-content {
+        flex-direction: column;
+
+    }
+
+    .travel .box-detail {
+        padding-bottom: 48px;
+    }
+
+    .travel .box-detail,
+    .beauty .box-detail {
+        margin-left: 0;
+    }
+
+    .travel img {
+        align-self: center;
+    }
+
+    .beauty img {
+        margin-bottom: 90px;
+    }
+
+    .travel .box-content {
+        top: 171px;
+    }
+
+    .beauty {
+        background-position-x: right;
+        top: 27px;
+    }
+
+    .beauty .box-content {
+        top: 188px;
+        transform: none;
+    }
+
+    .beauty .box-detail {
+        padding-bottom: 80px;
+    }
+
+    .box-detail .tag li {
+        background: #f1f1f1FF;
+    }
+
+    .box {
+        margin-bottom: 253px;
+    }
+
+    .beauty .box-content {
+        margin-bottom: 336px;
+    }
+
+    .box-detail p {
+        color: #5B5B5B;
+    }
+
+    .box-detail .fs-28 {
+        color: #1e1e1e;
+    }
+
+    .finance::before {
+        display: none;
+    }
+
+    .finance .box-detail {
+        top: 393px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 48px;
+
+    }
+
+    .finance .box-content {
+        margin: 0 auto;
+        margin-bottom: 230px;
+    }
+
+    .beauty {
+        margin-bottom: 313px;
+    }
+
+    .mark-UI,
+    .mark-frotend {
+        top: 51px;
+    }
+
+    .mark-UI {
+        left: -10px;
+    }
+
+    .mark-frotend {
+        left: 160px;
+    }
+
+    .detail .display-in-mobile,
+    .skill .display-in-mobile {
+        display: block;
+    }
+
+    .detail .display-in-desktop,
+    .skill .display-in-desktop {
+        display: none;
+    }
+
+    .detail {
+        width: 268px;
+        margin: 0 auto;
+    }
+
+}
+
+@media(max-width:375px) {
+    .nav-image .display-in-mobile {
+        display: block;
+    }
+
+    .nav-image .display-in-desktop {
+        display: none;
+    }
+
+    .finance {
+        background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-sm.png?raw=true");
+    }
+
+
+}

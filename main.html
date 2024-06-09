@@ -14,21 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="js/jquery-3.7.1.js"></script>
 </head>
 
 <body>
     <div class="headerpage"></div>
-    <div class="nav">
+    <div class="container nav">
         <div class="introduce">
             <p class="name">Hi！我是 Noel</p>
-            <p class="detail">具有 10 年經驗的<img
+            <p class="detail">具有 10 年經驗的<br class="display-in-mobile"><img
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true"
                     alt="mark" class="mark-UI"> 資深 UI 設計師 兼<img
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true"
                     alt="mark" class="mark-frotend"> &nbsp;前端工程師</p>
-            <p class="detail">技術雙修並行,&nbsp; 熱衷於優化使用者的網頁體驗</p>
-            <p class="skill">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
+            <p class="detail">技術雙修並行,&nbsp; <br class="display-in-mobile">熱衷於優化使用者的網頁體驗</p>
+            <p class="skill">WEB DEVELOPMENT / BRANDING / <br class="display-in-mobile">UI / UX / APP DESIGN</p>
             <div class="introduce-link">
                 <a href="#"><img
                         src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/instagram.svg"
@@ -41,10 +43,14 @@
                         alt="youtube"></a>
             </div>
         </div>
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/hero-lg.png?raw=true"
-            alt="hero-lg">
+        <div class="nav-image">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/hero-lg.png?raw=true"
+                alt="hero-lg" class="display-in-desktop">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/hero-sm.png?raw=true"
+                alt="hero-sm" class="display-in-mobile">
+        </div>
     </div>
-    <div class="main-content">
+    <div class="container main-content">
         <div class="work-introduce">
             <p class="fs-32">作品介紹</p>
             <ul>
@@ -60,7 +66,7 @@
                                 <li>響應式設計</li>
                                 <li>Bootstrap</li>
                             </ul>
-                            <hr>
+                            <hr class="display-in-desktop">
                             <a href="#">完整介紹<span class="material-symbols-outlined">
                                     arrow_forward
                                 </span></a>
@@ -78,7 +84,7 @@
                                 <li>iOS</li>
                                 <li>React</li>
                             </ul>
-                            <hr>
+                            <hr class="display-in-desktop">
                             <a href="#">完整介紹<span class="material-symbols-outlined">
                                     arrow_forward
                                 </span></a>
@@ -98,7 +104,7 @@
                                 <li>響應式設計</li>
                                 <li>ＷordPress</li>
                             </ul>
-                            <hr>
+                            <hr class="display-in-desktop">
                             <a href="#">完整介紹<span class="material-symbols-outlined">
                                     arrow_forward
                                 </span></a>
@@ -108,32 +114,41 @@
                 </li>
             </ul>
         </div>
-        <div class="service-introduce">
+        <div class="container service-introduce">
             <p class="fs-32">服務項目</p>
             <ul>
-                <li class="service-item"><img
-                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-visual.svg"
-                        alt="service-item-visual">
-                    <p>平面設計</p>
+                <li class="service-item">
+                    <div class="service-item-detail">
+                        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-visual.svg"
+                            alt="service-item-visual">
+                        <p>平面設計</p>
+                    </div>
                 </li>
-                <li class="service-item"><img
-                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-ui.svg"
-                        alt="service-item-ui">
-                    <p>UI 設計</p>
+                <li class="service-item">
+                    <div class="service-item-detail"><img
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-ui.svg"
+                            alt="service-item-ui">
+                        <p>UI 設計</p>
+                    </div>
                 </li>
-                <li class="service-item"><img
-                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-html%26css.svg"
-                        alt="service-item-html">
-                    <p>切版服務</p>
+
+                <li class="service-item">
+                    <div class="service-item-detail"><img
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-html%26css.svg"
+                            alt="service-item-html">
+                        <p>切版服務</p>
+                    </div>
                 </li>
-                <li class="service-item"><img
-                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-front-end.svg"
-                        alt="service-item-front-end">
-                    <p>前端開發</p>
+                <li class="service-item">
+                    <div class="service-item-detail"><img
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-front-end.svg"
+                            alt="service-item-front-end">
+                        <p>前端開發</p>
+                    </div>
                 </li>
             </ul>
             <p class="text">想要合作或瞭解更多？</p>
-            <a href="#">詳細內容與合作流程<span class="material-symbols-outlined">
+            <a href="#" class="more-information">詳細內容與合作流程<span class="material-symbols-outlined">
                     arrow_forward
                 </span></a>
         </div>
@@ -175,14 +190,19 @@
                 </li>
             </ul>
 
-
-            <div class="page">
-                <div class="ellipse"></div>
-                <div class="ellipse"></div>
-                <div class="ellipse"></div>
-                <div class="ellipse"></div>
-            </div>
         </div>
+        <div class="page display-in-desktop">
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+        </div>
+        <div class="display-in-mobile ">
+            <a href="#" class="more-information">更多文章<span class="material-symbols-outlined">
+                    arrow_forward
+                </span></a>
+        </div>
+
 
 
     </div>
