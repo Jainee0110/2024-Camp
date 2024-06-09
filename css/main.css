@@ -512,8 +512,8 @@
 
     .box-detail,
     .finance .box-detail {
-        width: 355px;
-        padding: 24px;
+        width: 350px;
+        padding: 24px 20px;
         text-align: center;
     }
 
